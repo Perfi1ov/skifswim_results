@@ -1,2 +1,0 @@
-# skifswim_results
-results
