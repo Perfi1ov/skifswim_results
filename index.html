@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СКИФ протоколы</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pdf-frame">
+            <h1>Протоколы 23-26.12.2025</h1>
+
+            <!-- Нижний блок с текстом
+            <div class="footer-text">
+                <p>
+                    </strong>Вниманию участников!</strong>
+                </p>
+                <p>
+                    Заплывы на 200 м. в/с в третий день будут проходить следующим образом:<br>
+                    2 сильнейших заплыва - в обычном формате<br>
+                    Остальные заплывы - объединённые (по 2 человека на дорожке)
+                </p>
+            </div> -->
+
+            <!-- Список доступных документов -->
+            {% for doc in documents %}
+                <div class="document-item">
+                    <a href="{{ doc.pdf_url }}"
+                       class="doc-title"
+                       target="_blank">
+                        {{ doc.name }}
+                    </a>
+                </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
