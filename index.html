@@ -4,42 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>СКИФ протоколы</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
     <div class="container">
-        <div class="pdf-frame">
-            <h1>Протоколы 23-26.12.2025</h1>
+        <h1>Протоколы 23-26.12.2025</h1>
 
-            <!-- Нижний блок с текстом
-            <div class="footer-text">
-                <p>
-                    </strong>Вниманию участников!</strong>
-                </p>
-                <p>
-                    Заплывы на 200 м. в/с в третий день будут проходить следующим образом:<br>
-                    2 сильнейших заплыва - в обычном формате<br>
-                    Остальные заплывы - объединённые (по 2 человека на дорожке)
-                </p>
-            </div> -->
-
-            <!-- Список доступных документов -->
-            {% for doc in documents %}
-                <div class="document-item">
-                    <a href="{{ doc.pdf_url }}"
-                       class="doc-title"
-                       target="_blank">
-                        {{ doc.name }}
-                    </a>
-                </div>
-            {% endfor %}
-
-
+        <div class="document-item">
+            <a href="static/pdfs/ScheduleList.pdf" target="_blank">Расписание заплывов</a>
+        </div>
+        <div class="document-item">
+            <a href="static/pdfs/StartList_1.pdf" target="_blank">Стартовые протоколы 1-й день</a>
+        </div>
+        <div class="document-item">
+            <a href="static/pdfs/ResultList_1.pdf" target="_blank">Итоговые протоколы 1-й день</a>
+        </div>
+        <div class="document-item">
+            <a href="static/pdfs/StartList_2.pdf" target="_blank">Стартовые протоколы 2-й день</a>
+        </div>
+        <div class="document-item">
+            <a href="static/pdfs/ResultList_2.pdf" target="_blank">Итоговые протоколы 2-й день</a>
+        </div>
+        <div class="document-item">
+            <a href="static/pdfs/StartList_3.pdf" target="_blank">Стартовые протоколы 3-й день</a>
+        </div>
+        <div class="document-item">
+            <a href="static/pdfs/ResultList_3.pdf" target="_blank">Итоговые протоколы 3-й день</a>
+        </div>
+        <div class="document-item">
+            <a href="static/pdfs/StartList_4.pdf" target="_blank">Стартовые протоколы 4-й день</a>
         </div>
     </div>
 </body>
 </html>
-
 
 
 
